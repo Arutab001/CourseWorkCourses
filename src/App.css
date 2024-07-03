@@ -1,38 +1,109 @@
+body {
+    margin-top: 10vh;
+    background-color: #27282c;
+    overflow-x: hidden;
+}
+
+
+
 .App {
-  text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+    text-decoration: none;
+}
+p.Logo {
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p.Login {
+    margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App {
+    display: flex;
+    height: 200vh;
+    flex-direction: column;
+    width: 100dvw;
 }
 
-.App-link {
-  color: #61dafb;
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 3vh;
+    background: black;
+    width: 100vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.main1 {
+    display: flex;
+    margin-bottom: 5vw;
+}
+
+.Logo {
+
+    font-size: xx-large;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.Logo:hover {
+    color: #d5d5d5;
+}
+
+/*.Login {*/
+
+/*    padding-right: 5vh;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.line-1:hover {
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+.footer{
+    background: #27282c;
+    width: 100vw;
+    height: 20vh;
+}
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+.Slider {
+    display: flex;
+    justify-content: center;
+
+}
+.Router {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

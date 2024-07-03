@@ -1,0 +1,11 @@
+body {
+    background: #232323;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 5px 5px;
+    background: #5e5e5e;
+    width: 100%;
+    height: 100%;
+}
