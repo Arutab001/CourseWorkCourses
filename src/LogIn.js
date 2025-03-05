@@ -3,7 +3,6 @@ import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } 
 import { connect } from 'react-redux';
 import { setUser, logoutUser } from "./tags/reduser";
 import axios from 'axios';
-import Cookies from 'js-cookie';
 import UserDataConsoleComponent from "./tags/test";
 
 const LoginDialog = (props) => {
@@ -28,49 +27,11 @@ const LoginDialog = (props) => {
     };
 
     const handleLogin = async () => {
-        console.log(`Логин: ${login}, Пароль: ${password}`);
-        setErrorMessage('');
-        try {
-            const response = await axios.post('http://localhost:8081/api/v1/auth/authenticate', {
-                email: login,
-                password: password
-            });
 
-
-            if (response.data) {
-                props.setUser({
-                    username: login,
-                    isLoggedIn: true
-                });
-                setErrorMessage(''); // Очистить сообщение об ошибке, если авторизация успешна
-                handleClose();
-            }
-        } catch (error) {
-            console.error('Auth failed:', error);
-            setErrorMessage('Неверный логин или пароль');
-        }
     };
 
     const handleRegister = async () => {
-        try {
-            const response = await axios.post('http://localhost:8081/api/v1/auth/register', {
-                email: login,
-                password: password
-            });
-
-
-            if (response.data) {
-                props.setUser({
-                    username: response.data.email,
-                    isLoggedIn: true
-                });
-                setErrorMessage(''); // Очистить сообщение об ошибке, если регистрация успешна
-                handleClose();
-            }
-        } catch (error) {
-            console.error('Reg failed', error);
-            setErrorMessage('Ошибка при регистрации');
-        }
+       
     };
 
     return (
