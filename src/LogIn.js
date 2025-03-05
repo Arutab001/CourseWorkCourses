@@ -7,9 +7,6 @@ import Cookies from 'js-cookie';
 import UserDataConsoleComponent from "./tags/test";
 
 const LoginDialog = (props) => {
-    useEffect(() => {
-        console.log('Текущее состояние Redux:', props.currentUser);
-    }, []);
 
     const [open, setOpen] = useState(false);
     const [login, setLogin] = useState('');
