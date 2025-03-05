@@ -27,9 +27,9 @@ const Footer = () => {
                     </Box>
                 </Hidden>
                 <Box sx={{display: "flex", flexDirection: "column", paddingTop: '10vh', paddingRight: '5vw'}}>
-                    <Typography variant="h6" component="div" sx={{color: "white"}}>Batura Inc.</Typography>
-                    <Typography variant="h6" component="div" sx={{color: "white"}}>+375447573325</Typography>
-                    <Typography variant="h6" component="div" sx={{color: "white"}}>375447573325@yandex.by</Typography>
+                    <Typography variant="h6" component="div" sx={{color: "white"}}>Cringe Inc.</Typography>
+                    <Typography variant="h6" component="div" sx={{color: "white"}}>+1234567890</Typography>
+                    <Typography variant="h6" component="div" sx={{color: "white"}}>evangelionenjoyerzxc@gmail.com</Typography>
                 </Box>
             </Box>
         </footer>
