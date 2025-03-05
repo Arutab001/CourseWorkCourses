@@ -36,7 +36,6 @@ const LoginDialog = (props) => {
                 password: password
             });
 
-            const accessToken = Cookies.get('access_token');
 
             if (response.data) {
                 props.setUser({
@@ -59,7 +58,6 @@ const LoginDialog = (props) => {
                 password: password
             });
 
-            const accessToken = Cookies.get('access_token');
 
             if (response.data) {
                 props.setUser({

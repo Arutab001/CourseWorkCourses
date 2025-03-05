@@ -61,7 +61,7 @@ const Header = () => {
                     Про нас
                 </div>
                 <div className="header_right">
-                    
+                    <LogIn />
 
                 </div>
             </Box>
