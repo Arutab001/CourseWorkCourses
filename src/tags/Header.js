@@ -2,20 +2,17 @@ import React, {useState, useEffect} from 'react';
 import '../App.css';
 import {BrowserRouter as Router, Link, NavLink, Route, Routes} from "react-router-dom";
 import FrontEnd from "../pages/Front-End";
-import App from "../App"; // Создайте файл стилей для компонента
+
 import Home from "../pages/Home";
 import Specialities from "../pages/Specialities";
 import {Box, TextField} from "@mui/material";
 import BackEnd from "../pages/BackEnd";
 import LogIn from "../LogIn";
-import { connect } from 'react-redux';
 import header from "../tags/Header.css";
 import AI from "../pages/AI";
 import MobileDeveloper from "../pages/MobileDeveloper";
 import FullStackCSharpPage from "../pages/FullStack";
 import UnityGameDevPage from "../pages/DataAnalisys";
-import Footer from "./Footer";
-
 
 const Header = () => {
     const [scrollDirection, setScrollDirection] = useState('up');

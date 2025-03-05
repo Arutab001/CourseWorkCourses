@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@mui/material';
 import { connect } from 'react-redux';
 import { setUser, logoutUser } from "./tags/reduser";
-import axios from 'axios';
 import UserDataConsoleComponent from "./tags/test";
 
 const LoginDialog = (props) => {
@@ -31,7 +30,7 @@ const LoginDialog = (props) => {
     };
 
     const handleRegister = async () => {
-       
+
     };
 
     return (
